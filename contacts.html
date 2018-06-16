@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>contacts</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="img/icon1.png" type="image/x-icon">
+<link rel="shortcut icon" href="#" type="image/x-icon">
+<meta name="description" content="Finite intelligence website">
+<meta name="keywords" content="Your keywords">
+<meta name="author" content="Miami Larry">
+<meta name="format-detection" content="0708615777">
+
+<!--JS-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/jquery.equalheights.js"></script>
+<script src="js/TMForm.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/bootstrap-filestyle.js"></script>
+<script src="js/jquery.ui.totop.js"></script>
+<!--LATER-->
+<!--<script src="js/particles.js"></script>
+<script src="js/app.js"></script>-->
+<!--CSS-->
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/contact-form.css">
+<link rel="stylesheet" href="fonts/font-awesome.css">
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+
+    <div id="ie6-alert" style="width: 100%; text-align:center;">
+    <img src="http://beatie6.frontcube.com/images/ie6.jpg" alt="Upgrade IE 6" width="640" height="344" border="0" usemap="#Map" longdesc="http://die6.frontcube.com" />
+      <map name="Map" id="Map"><area shape="rect" coords="496,201,604,329" href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank" alt="Download Interent Explorer" /><area shape="rect" coords="380,201,488,329" href="http://www.apple.com/safari/download/" target="_blank" alt="Download Apple Safari" /><area shape="rect" coords="268,202,376,330" href="http://www.opera.com/download/" target="_blank" alt="Download Opera" /><area shape="rect" coords="155,202,263,330" href="http://www.mozilla.com/" target="_blank" alt="Download Firefox" />
+        <area shape="rect" coords="35,201,143,329" href="http://www.google.com/chrome" target="_blank" alt="Download Google Chrome" />
+      </map>
+  </div>
+  <![endif]-->
+</head>
+<body>
+<!--header-->
+<header>
+    <div class="container box">
+      <nav class="navbar navbar-default navbar-static-top tm_navbar clearfix"role="navigation">
+          <ul class="nav sf-menu clearfix">
+              <li class="active">
+                <a href="home.html">home</a>
+              </li>
+              <li>
+                <a href="about.html">about</a>
+              </li>
+              <li>
+                <a href="services.html">services</a>
+              </li>
+              <li>
+                <a href="jobs.html">jobs</a>
+              </li>
+              <li>
+                <a href="contacts.html">contacts</a>
+              </li>
+          </ul>
+          <select class="select-menu" style="display: inline-block;">
+            <option value="#">Navigate to...</option>
+            <option value="home.html">home</option>
+            <option value="about.html">about</option>
+            <option value="services.html">services</option>
+            <option value="jobs.html">jobs</option>
+            <option value="contacts.html">contacts</option>
+    </select>
+    </nav>
+      <strong></strong>
+      <em></em>
+  </div>
+    <div class="bg_pic">
+        <div class="container">
+            <h1 class="navbar-brand navbar-brand_"><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>
+        </div>
+    </div>
+</header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <h2><i></i>Addresses</h2>
+                <div class="info">
+                    <strong>Address 1:</strong>
+                    <p>Finite Intelligence<br>Nairobi,Kenya.</p>
+                    <strong>Telephones:</strong>
+                    <p>+254710430060<br>+254708615777</p>
+                    <strong>Address 2:</strong>
+                    <p>Finite Intelligence<br>Mombasa,Kenya.</p>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8">
+                <h2><i></i>Contact form</h2>
+                <form id="contact-form">
+                      <div class="contact-form-loader"></div>
+                      <fieldset>
+                        <label class="name form-div-1">
+                          <strong>Name*</strong>
+                          <input type="text" name="name" placeholder="" value="" data-constraints="@Required @JustLetters"  />
+                          <span class="empty-message">*This field is required.</span>
+                          <span class="error-message">*This is not a valid name.</span>
+                        </label>
+                        <label class="email form-div-2">
+                        <strong>E-mail*</strong>
+                          <input type="text" name="email" placeholder="" value="" data-constraints="@Required @Email" />
+                          <span class="empty-message">*This field is required.</span>
+                          <span class="error-message">*This is not a valid email.</span>
+                        </label>
+                        <label class="phone form-div-3">
+                        <strong>Phone</strong>
+                          <input type="text" name="phone" placeholder="" value="" data-constraints="@JustNumbers" />
+                          <span class="empty-message">*This field is required.</span>
+                          <span class="error-message">*This is not a valid phone.</span>
+                        </label>
+                        <label class="message form-div-4">
+                        <strong>Message*</strong>
+                          <textarea name="message" placeholder="" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                          <span class="empty-message">*This field is required.</span>
+                          <span class="error-message">*The message is too short.</span>
+                        </label>
+                        <!-- <label class="recaptcha"><span class="empty-message">*This field is required.</span></label> -->
+                        <div>
+                          <b data-type="submit" class="btn-default btn1"><a href="#">submit</a></b>
+                          <p>* required fields</p>
+                        </div>
+                      </fieldset>
+                      <div class="modal fade response-message">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                              <h4 class="modal-title">Modal title</h4>
+                            </div>
+                            <div class="modal-body">
+                              You message has been sent! We will be in touch soon.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <hr>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <ul class="list1-1">
+                            <li><a href="#">Managed Services</a></li>
+                            <li><a href="#">Virtual Office / Private Cloud</a></li>
+                            <li><a href="#">Strategic Planning</a></li>
+                            <li><a href="#">Installation</a></li>
+                            <li><a href="#">Mobile IT</a></li>
+                            <li><a href="#">Network Security</a></li>
+                            <li><a href="#">email</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <ul class="list1-1">
+                            <li><a href="#">Web Hosting</a></li>
+                            <li><a href="#">Offsite Backup</a></li>
+                            <li><a href="#">Internet Access</a></li>
+                            <li><a href="#">VoIP</a></li>
+                            <li><a href="#">Digital Media</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <hr>
+                <ul class="list1">
+                    <li><a href="#"><img src="img/page1_logo1.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/page1_logo2.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/page1_logo3.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/page1_logo4.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/page1_logo5.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/page1_logo6.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/page1_logo7.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <figure><img src="img/logo.png" alt=""></figure>
+        <p>&copy; <em id="copyright-year"></em> | <a href="index-5.html">Privacy policy</a></p>
+    </div>
+</footer>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
